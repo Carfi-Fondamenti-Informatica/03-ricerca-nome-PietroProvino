@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "First Test",
+      "setup": "g++ main.cpp -o main",
+      "run": "./main",
+      "input": "Alex\r\nPino\r\nLino\r\nAnna",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Second Test",
+      "setup": "g++ main.cpp -o main",
+      "run": "./main",
+      "input": "Alex\r\nPino\r\nLino\r\nAlex",
+      "output": "0",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Third Test",
+      "setup": "g++ main.cpp -o main",
+      "run": "./main",
+      "input": "Alex\r\nPino\r\nLino\r\nPino",
+      "output": "1",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Fourth Test",
+      "setup": "g++ main.cpp -o main",
+      "run": "./main",
+      "input": "Alex\r\nPino\r\nLino\r\nLino",
+      "output": "2",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
